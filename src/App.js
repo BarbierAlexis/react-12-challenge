@@ -13,18 +13,13 @@ class App extends Component {
     this.state = {
       activeId: 'home'
     };
-
   }
-
 
   handleChangeTab = (event) => {
     const buttonId = event.target.id;
-    console.log(buttonId)
     this.setState({activeId: buttonId})
-    console.log(this.state.activeId)
   }
 
-  
   getTabContent() {
     switch(this.state.activeId) {
       case 'home':
